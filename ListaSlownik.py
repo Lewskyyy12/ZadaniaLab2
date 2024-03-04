@@ -9,6 +9,14 @@ for i in range(len(lista)):
         slownik[lista[i]]=licznik
     licznik=0
 print(slownik)
+lista = []
+for key in slownik:
+    if type(key) == str:
+        lista.append(key)
+for i in range(len(lista)):
+    del slownik[lista[i]]
+print(slownik)
+
 
 
 
